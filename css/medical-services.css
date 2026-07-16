@@ -1,0 +1,310 @@
+:root {
+  --color-base: #fafbf7;
+  --color-bg-light: #eaf3e6;
+  --color-main: #7bae7f;
+  --color-accent: #3f6f55;
+  --color-text-black: #3a3a3a;
+  --color-text-light: #eaf3e6;
+  --color-accent-red: #6b3d3d;
+  --color-bg-sub:#d1d9ed;
+}
+
+/* 内科について */
+.medical_service_about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0 20px;
+}
+.medical_service_about .about_image {
+  width: 30%;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 55%,
+    rgba(0, 0, 0, 0.7) 68%,
+    transparent 78%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    #000 55%,
+    rgba(0, 0, 0, 0.7) 61%,
+    transparent 70%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.medical_service_about img {
+  width: 100%;
+}
+.medical_service_about .about_text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width:768px) {
+  .medical_service_about {
+    flex-direction: column;
+  }
+  .medical_service_about .about_image {
+    width: 70%;
+  }
+
+  .medical_service_about .about_text {
+    width: 100%;
+  }
+}
+/*＊＊＊＊＊＊ 各診療について ＊＊＊＊＊＊*/
+
+.medical_departments {
+  margin-top: 100px;
+}
+.medical_tabs {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 40px 100px;
+  margin-top: 24px;
+}
+
+/* タブ一覧 */
+.medical_tabs__list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: end;
+  padding-inline: 14px;
+}
+
+/* タブ */
+.medical_tabs__button {
+  position: relative;
+  min-height: 54px;
+  padding: 12px 8px;
+
+  border: 1px solid #aaa;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+
+  background-color: #f8f8f5;
+  color: var(--color-text-black);
+
+  font-family: "Shippori Mincho", serif;
+  font-size: clamp(0.85rem, 1.3vw, 1.1rem);
+  font-weight: 600;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.medical_tabs__button + .medical_tabs__button {
+  margin-left: -1px;
+}
+
+.medical_tabs__button:hover {
+  background-color: var(--color-bg-light);
+  color: var(--color-accent);
+}
+
+.medical_tabs__button.is-active {
+  z-index: 2;
+  background-color: #fff;
+  color: var(--color-accent);
+  transform: translateY(1px);
+}
+
+/* 選択中タブの下線 */
+.medical_tabs__button.is-active::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
+  left: 18px;
+
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 999px;
+}
+
+/* 内容全体 */
+.medical_tabs__panels {
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgb(58 58 58 / 18%);
+}
+
+/* 各パネル */
+.medical_tabs__panel {
+  padding: 52px clamp(24px, 6vw, 88px) 64px;
+}
+
+.medical_tabs__panel[hidden] {
+  display: none;
+}
+
+.medical_tabs__panel.is-active {
+  animation: tabFadeIn 0.45s ease both;
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 診療科タイトル */
+.medical_tabs__title {
+  font-family: "Shippori Mincho", serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  text-align: center;
+}
+/* 導入文 */
+.medical_tabs__lead {
+  margin-top: 16px;
+  line-height: 1.8;
+  text-align: center;
+}
+/* 症状一覧 */
+.medical_tabs__symptoms {
+  margin-top: 36px;
+}
+.medical_tabs__symptoms h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.medical_tabs__symptoms ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-top: 16px;
+}
+.medical_tabs__symptoms li {
+  position: relative;
+  padding-left: 20px;
+}
+.medical_tabs__symptoms li::before {
+  content: "✓";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-accent-red);
+  font-weight: 700;
+}
+/* 主な診療内容 */
+.medical_tabs__details {
+  margin-top: 28px;
+  padding: 22px 28px 30px;
+  border-radius: 16px;
+  background-color: #dce5f5;
+}
+.medical_tabs__details h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-accent);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.medical_tabs__details h4 img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.medical_tabs__details p {
+  margin-top: 28px;
+  line-height: 1.9;
+  text-align: center;
+}
+/* タブのキーボード操作 */
+.medical_tabs__button:focus-visible {
+  z-index: 3;
+  outline: 3px solid rgb(63 111 85 / 35%);
+  outline-offset: 3px;
+}
+@media screen and (max-width: 900px) {
+  .medical_tabs__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding-inline: 0;
+  }
+
+  .medical_tabs__button {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+  }
+
+  .medical_tabs__button + .medical_tabs__button {
+    margin-left: 0;
+  }
+
+  .medical_tabs__button.is-active {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    transform: none;
+  }
+
+  .medical_tabs__button.is-active::after {
+    display: none;
+  }
+
+  .medical_tabs__panels {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .medical_tabs {
+    padding-inline: 0px;
+  }
+  .medical_tabs__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .medical_tabs__panel {
+    padding: 36px 20px 44px;
+  }
+
+  .medical_tabs__symptoms ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .medical_tabs__details {
+    padding: 20px;
+  }
+
+  .medical_tabs__details p {
+    text-align: left;
+  }
+
+}
+/* 当院からのメッセージ */
+.medical_message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.medical_message h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-black);
+}

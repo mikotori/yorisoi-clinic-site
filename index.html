@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="寄り添い内科クリニックは午前中朝9時から12時まで、午後は17時から21時まで開所している「働く人に寄り添うクリニック」です。"
+    />
+    <title>寄り添い内科クリニック</title>
+
+    <!-- GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GoogleFont end-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/top.css" />
+  </head>
+
+  <body id="top">
+    <header id="header">
+      <div class="page_title">
+        <h1>
+          <a href="index.html"
+            ><img src="images/logo.svg" alt="寄り添いクリニックのロゴ"
+          /></a>
+        </h1>
+      </div>
+      <div class="header_nav__items">
+        <div class="header_list__small">
+          <ul>
+            <li>
+              <a href="construction.html">
+                <img src="images/info_icon.png" alt="" aria-hidden="true" />
+                お知らせ
+              </a>
+            </li>
+
+            <li>
+              <a href="construction.html#">
+                <img
+                  src="images/questions_icon.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                よくあるご質問
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- スマートフォン用メニューボタン -->
+        <button
+          type="button"
+          class="menu_toggle"
+          aria-label="メニューを開く"
+          aria-controls="global-nav"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="header_nav" id="global-nav">
+          <nav aria-label="メインナビゲーション">
+            <ul>
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="features.html">クリニックの特徴</a></li>
+              <li><a href="medical-services.html">診療案内</a></li>
+              <li><a href="construction.html">医療案内</a></li>
+              <li><a href="construction.html#">アクセス</a></li>
+            </ul>
+          </nav>
+
+          <div class="contact_item">
+            <ul>
+              <li>
+                <a href="tel:03-1111-1111" class="btn info">
+                  <img src="images/call_icon01.png" alt="" aria-hidden="true" />
+                  お問い合わせ
+                </a>
+              </li>
+
+              <li>
+                <a href="tel:03-0000-0000" class="btn emergency">
+                  <img src="images/call_icon02.png" alt="" aria-hidden="true" />
+                  救急外来
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- メニュー表示時の黒い背景 -->
+        <div class="menu_backdrop" aria-hidden="true"></div>
+      </div>
+    </header>
+    <div class="mv">
+      <!-- 左側のカードとカレンダー -->
+      <div class="mv_left__box">
+        <div class="cardiology">
+          <ul>
+            <li>一般内科</li>
+            <li>生活習慣病</li>
+            <li>糖尿病内科</li>
+          </ul>
+          <ul>
+            <li>消化器内科</li>
+            <li>呼吸器内科</li>
+            <li>循環器内科</li>
+          </ul>
+        </div>
+        <div class="main_card">
+          <!-- グリッドで縦2横2 -->
+          <div class="main_card__block">
+            <div>
+              <a href="construction.html">
+                <img
+                  src="images/mv_item_icon01.png"
+                  alt="パーキングのアイコン"
+                />
+                <p>駐車場の<br />利用について</p>
+              </a>
+            </div>
+            <div>
+              <a href="#hospital_schedule">
+                <img src="images/mv_item_icon02.png" alt="営業時間のアイコン" />
+                <p>営業時間について</p>
+              </a>
+            </div>
+          </div>
+          <div class="main_card__block">
+            <div>
+              <a href="medical-services.html">
+                <img src="images/mv_item_icon03.png" alt="医者アイコン" />
+                <p>診療案内</p>
+              </a>
+            </div>
+            <div>
+              <a href="construction.html">
+                <img src="images/mv_item_icon04.png" alt="アラートアイコン" />
+                <p>緊急な時は</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hospital_hours">
+          <table>
+            <tbody>
+              <tr>
+                <th>診療時間</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+                <th>日</th>
+              </tr>
+              <tr>
+                <td>9:00<br />～<br />12:00</td>
+                <td>●</td>
+                <td>●</td>
+                <td>×</td>
+                <td>×</td>
+                <td>●</td>
+                <td>●</td>
+                <td>●</td>
+              </tr>
+              <tr>
+                <td>17:00<br />～<br />21:00</td>
+                <td>●</td>
+                <td>●</td>
+                <td>×</td>
+                <td>×</td>
+                <td>●</td>
+                <td>●<br />※</td>
+                <td>●<br />※</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- メインビジュアルのキャッチコピーと画像 -->
+      <div class="mv_right_box">
+        <div class="mv_slide__items" id="js-slide">
+          <img src="images/kv_01.jpg" alt="メインビジュアル1枚目" />
+          <img src="images/about_01.jpg" alt="メインビジュアル2枚目" />
+          <img src="images/about_02.jpg" alt="メインビジュアル3枚目" />
+          <img src="images/about_03.jpg" alt="メインビジュアル4枚目" />
+
+          <!-- 画像に重なった部分だけ表示する白文字 -->
+          <div class="mv_copy_mask" aria-hidden="true">
+            <div class="mv_copy mv_copy--reverse">
+              <p class="main">通える。安心がここにある</p>
+              <p class="sub">
+                忙しい、時間がない！<br />
+                そんな悩みに 寄り添う病院
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 通常の黒文字 -->
+        <div class="mv_copy mv_copy--base">
+          <p class="main">通える。安心がここにある</p>
+          <p class="sub">
+            忙しい、時間がない！<br />
+            そんな悩みに 寄り添う病院
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <main>
+        <!-- 診療予定表 -->
+        <section class="hospital_schedule" id="hospital_schedule">
+          <div class="section_title">
+            <h2>診療予定表</h2>
+          </div>
+          <div class="hospital_schedule__table-wrap">
+            <table class="hospital_schedule__timeTable">
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>金</th>
+                  <th>土</th>
+                  <th>日</th>
+                </tr>
+                <tr>
+                  <td class="vertical_writing">午前</td>
+                  <td>
+                    <span class="hospital_schedule__time">9:00～12:00</span><br />
+                    <div class="hospital_schedule__doctors">
+                      山中医師<br />佐藤医師
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hospital_schedule__time">9:00～12:00</span><br />
+                    <div class="hospital_schedule__doctors">
+                      北島医師<br />後藤医師
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hospital_schedule__time">9:00～12:00</span><br />
+                    <div class="hospital_schedule__doctors">
+                      山中医師<br />佐藤医師
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hospital_schedule__time">9:00～12:00</span><br />
+                    <div class="hospital_schedule__doctors">
+                      山中医師<br />佐藤医師
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hospital_schedule__time">9:00～12:00</span><br />
+                    <div class="hospital_schedule__doctors">
+                      北島医師<br />後藤医師
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="vertical_writing">午後</td>
+                  <td>
+                    <span class="hospital_schedule__time">17:00～21:00</span
+                    ><br />
+                    <div class="hospital_schedule__doctors">
+                      山中医師<br />佐藤医師
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hospital_schedule__time">17:00～21:00</span
+                    ><br />
+                    <div class="hospital_schedule__doctors">
+                      北島医師<br />後藤医師
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hospital_schedule__time">17:00～21:00</span
+                    ><br />
+                    <div class="hospital_schedule__doctors">
+                      山中医師<br />佐藤医師
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hospital_schedule__time">14:00～19:00</span
+                    ><br />
+                    <div class="hospital_schedule__doctors">
+                      山中医師<br />佐藤医師
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hospital_schedule__time">14:00～19:00</span
+                    ><br />
+                    <div class="hospital_schedule__doctors">
+                      北島医師<br />後藤医師
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="importment_note__item">
+            <ul class="hospital_schedule__notes">
+              <li>水曜日・木曜日が定休日となります。</li>
+              <li>
+                臨時休診の場合はこちらのカレンダーに表示しますのでご確認ください
+              </li>
+              <li>救急の場合は右側救急外来のボタンからお電話ください。</li>
+            </ul>
+            <a
+              href="tel:03-0000-0000"
+              class="emergency-call"
+              aria-label="救急外来へ電話する"
+            >
+              <img src="images/footer_icon06.png" alt="" aria-hidden="true" />
+              <span>救急外来</span>
+            </a>
+          </div>
+        </section>
+        <!-- お知らせ -->
+        <section>
+          <div class="section_title">
+            <h2>お知らせ</h2>
+          </div>
+          <div class="news_box">
+            <ul class="news_list">
+              <li class="news_item">
+                <div class="news_meta">
+                  <time class="news_date" datetime="2026-07-01">2026.07.01</time>
+                  <span class="news_category">お知らせ</span>
+                </div>
+                <a href="construction.html" class="news_link">7月の臨時休診日について</a>
+              </li>
+              <li class="news_item">
+                <div class="news_meta">
+                  <time class="news_date" datetime="2026-06-29">2026.06.29</time>
+                  <span class="news_category">お知らせ</span>
+                </div>
+                <a href="construction.html" class="news_link"
+                  >季節の変わり目に負けない体の作り方</a
+                >
+              </li>
+              <li class="news_item">
+                <div class="news_meta">
+                  <time class="news_date" datetime="2026-06-20">2026.06.20</time>
+                  <span class="news_category">お知らせ</span>
+                </div>
+                <a href="construction.html" class="news_link"
+                  >健診に関するお問い合わせについて</a
+                >
+              </li>
+              <li class="news_item">
+                <div class="news_meta">
+                  <time class="news_date" datetime="2026-06-10">2026.06.10</time>
+                  <span class="news_category">お知らせ</span>
+                </div>
+                <a href="construction.html" class="news_link">求人情報を更新しました。</a>
+              </li>
+              <li class="news_item">
+                <div class="news_meta">
+                  <time class="news_date" datetime="2026-06-04">2026.06.04</time>
+                  <span class="news_category">お知らせ</span>
+                </div>
+                <a href="construction.html" class="news_link"
+                  >診療報酬改定及び施設基準届け出に関するお問い合わせ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="reservation_area">
+            <p><strong>ご予約優先でご案内しております。</strong></p>
+            <div class="reservation_btn">
+              <a href="construction.html" class="WEB_reserve">
+                <span>WEB予約</span>
+                <span class="WEB_reserve__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- About -->
+        <section id="about">
+          <div class="about">
+            <div class="about_text">
+              <h2>寄り添いクリニックについて</h2>
+              <p>
+                &emsp;寄り添いクリニックは日々仕事に忙しくしている方が
+                時間を気にせず通えるように夜21時まで営業をしております。
+              </p>
+              &emsp;当クリニックは忙しい方へ寄り添える医院であり続けられるよう
+              日々試行錯誤しお客様の満足にお答えができるよう猛進しています。
+            </div>
+            <div class="blurred_image">
+              <img
+                src="images/about_01.jpg"
+                alt="サラリーマン風の男性が働く風景"
+              />
+              <img src="images/about_02.jpg" alt="配達員の男性が働く風景" />
+              <img src="images/about_03.jpg" alt="薬剤師の女性が働く風景" />
+            </div>
+          </div>
+        </section>
+        <!-- アクセス -->
+        <section>
+          <div class="section_title">
+            <h2>アクセス</h2>
+          </div>
+          <div class="access_section">
+            <address>
+              <h3>寄り添い内科クリニック</h3>
+              〒220-2222<br />東京都杉並区浜田山　6-2-3<br />
+              <span
+                >京王井の頭線 浜田山駅<br />改札出て南口を出たところ徒歩5分</span
+              >
+            </address>
+            <div class="access_map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0223311307695!2d139.62613447457107!3d35.67645213023856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f237f4c01811%3A0xf5f1ae5ba54b56d1!2z44CSMTY4LTAwNjUg5p2x5Lqs6YO95p2J5Lim5Yy65rWc55Sw5bGx77yR5LiB55uu77yW!5e0!3m2!1sja!2sjp!4v1783398426105!5m2!1sja!2sjp"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="footer_items">
+        <div class="footer_address">
+          <a href="index.html"
+            ><img src="images/logo.svg" alt="寄り添いクリニックのロゴ"
+          /></a>
+          <address>〒220-2222<br />東京都杉並区浜田山6-2-3</address>
+        </div>
+        <div class="footer_list">
+          <ul>
+            <li>
+              <a href="features.html">
+                <img src="images/footer_icon01.png" alt="" />
+                クリニックの特徴
+              </a>
+            </li>
+
+            <li>
+              <a href="medical-services.html">
+                <img src="images/footer_icon02.png" alt="" />
+                診療案内
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="construction.html">
+                <img src="images/footer_icon03.png" alt="" />
+                院長紹介
+              </a>
+            </li>
+
+            <li>
+              <a href="construction.html">
+                <img src="images/footer_icon04.png" alt="" />
+                アクセス
+              </a>
+            </li>
+
+            <li>
+              <a href="construction.html">
+                <img src="images/footer_icon05.png" alt="" />
+                プライバシーポリシー
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="construction.html">
+                <img src="images/footer_icon06.png" alt="" />
+                よくあるご質問
+              </a>
+            </li>
+
+            <li>
+              <a href="construction.html">
+                <img src="images/footer_icon07.png" alt="" />
+                お知らせ
+              </a>
+            </li>
+
+            <li>
+              <a href="construction.html">
+                <img src="images/footer_icon08.png" alt="" />
+                サイトマップ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy-light"><small>&copy; Yorisoi Clinick inc.</small></p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
