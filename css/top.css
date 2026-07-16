@@ -801,6 +801,9 @@ hospital_schedule__timeTable th {
     gap: 5px;
     margin-block: 20px 5px;
   }
+  .reservation_area p {
+    font-size: 1.3rem;
+  }
   .reservation_btn .WEB_reserve {
     width: 300px;
   }
