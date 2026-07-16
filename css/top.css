@@ -495,11 +495,11 @@
   }
 
   .mv_copy .main {
-    font-size: clamp(1.75rem, 8vw, 2.2rem);
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
   }
 
   .mv_copy .sub {
-    font-size: 1.05rem;
+    font-size: 1.25rem;
   }
 
   .mv_slide__items {
