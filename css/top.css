@@ -842,7 +842,7 @@ hospital_schedule__timeTable th {
     grid-template-columns: 1fr;
   }
   .about h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
